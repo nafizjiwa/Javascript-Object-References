@@ -30,8 +30,8 @@ Methods in our object literals by creating ordinary, colon-separated key-value p
 
 If we try to access a property that does not exist on that object, undefined will be returned.<br>
 
-    objectName.propertyName(which is not in object);// Returns undefined
-    spaceship.favoriteIcecream; // Returns undefined
+       objectName.propertyName(which is not in object);// Returns undefined
+       spaceship.favoriteIcecream; // Returns undefined
 
 Example:<>br
 
@@ -44,11 +44,11 @@ Example:<>br
       color: 'silver'
     };
     
-`spaceship['Active Duty'];   // Returns true`
-`spaceship['Fuel Type'];   // Returns  'Turbo Fuel'`
-`spaceship['numCrew'];   // Returns '5'`
-`spaceship.numCrew;   // Returns  '5'`
-`spaceship.homePlanet; // Returns 'Earth'`
-`spaceship.color; // Returns 'silver'`
+`spaceship['Active Duty'];   // Returns true`<br>
+`spaceship['Fuel Type'];   // Returns  'Turbo Fuel'`<br>
+`spaceship['numCrew'];   // Returns '5'`<br>
+`spaceship.numCrew;   // Returns  '5'`<br>
+`spaceship.homePlanet; // Returns 'Earth'`<br>
+`spaceship.color; // Returns 'silver'`<br>
 
 
