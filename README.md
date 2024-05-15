@@ -3,12 +3,12 @@
 Object Literal: <br>
 
 let objectName = { <br>
-    this object is assigned to a variable named: objectName <br>
-    object literals are surrounded by curly braces { }<br>
-    they contain --> key: value pairs <br>
-    the keys are like variable names they point to a location holding the value <br>
-    keys are also called ***Identifiers***
-} <br>
+>>this object is assigned to a variable named: objectName <br>
+>>object literals are surrounded by curly braces { }<br>
+>>they contain --> key: value pairs <br>
+>>the keys are like variable names they point to a location holding the value <br>
+>>keys are also called ***Identifiers***
+>>>>} <br>
 
     let objectName = {
     'Property Name': 'Property Value',
