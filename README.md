@@ -50,6 +50,7 @@ Example:<>br
 `spaceship.homePlanet; // Returns 'Earth'`<br>
 `spaceship.color; // Returns 'silver'`<br>
 `spaceship.favoriteIcecream; // Returns undefined`<br>
-Above object property favoriteIcecream is not in the spaceship object above hence this property can not be found<br>
+<br>
+Above object property favoriteIcecream is not in the spaceship object above hence this property can not be found, so returns undefined<br>
 
 
