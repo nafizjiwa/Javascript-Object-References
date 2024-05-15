@@ -43,14 +43,21 @@ Example:<>br
       color: 'silver'
     };
     
-`spaceship['Active Duty'];   // Returns true`<br>
-`spaceship['Fuel Type'];   // Returns  'Turbo Fuel'`<br>
-`spaceship['numCrew'];   // Returns '5'`<br>
-`spaceship.numCrew;   // Returns  '5'`<br>
-`spaceship.homePlanet; // Returns 'Earth'`<br>
-`spaceship.color; // Returns 'silver'`<br>
-`spaceship.favoriteIcecream; // Returns undefined`<br>
+`spaceship['Active Duty'];               // Returns true`<br>
+`spaceship['Fuel Type'];                   // Returns  'Turbo Fuel'`<br>
+`spaceship['numCrew'];                      // Returns '5'`<br>
+`spaceship.numCrew;                          // Returns  '5'`<br>
+`spaceship.homePlanet;                        // Returns 'Earth'`<br>
+`spaceship.color;                              // Returns 'silver'`<br>
+`spaceship.favoriteIcecream;                    // Returns undefined`<br>
 <br>
 Above object property favoriteIcecream is not in the spaceship object above hence this property can not be found, so returns undefined<br>
+
+***Bracket Notation allows us to use variables inside brackets to select keys of an object***<br>
+
+    let returnAnyProp = (objectName, propName) => objectName[propName];           // propName is variable and looks for its value
+        console.log(returnAnyProp(spaceship, 'homePlanet'));                                 // Returns 'Earth'
+
+
 
 
