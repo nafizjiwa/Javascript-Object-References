@@ -2,7 +2,7 @@
 ------
 Object Literal: <br>
 
-let objectName = { <br>
+>let objectName = { <br>
 >>this object is assigned to a variable named: objectName <br>
 >>object literals are surrounded by curly braces { }<br>
 >>they contain --> key: value pairs <br>
