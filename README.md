@@ -1,21 +1,54 @@
 # Object-References<br>
 ------
-Object Literal:
+Object Literal: <br>
 
-let objectName = {
-    this object is assigned to a variable named: objectName
-    object literals are surrounded by curly braces
-    they contain
-    key: value pairs
-    the keys are like variable names
-}
+let objectName = { <br>
+    this object is assigned to a variable named: objectName <br>
+    object literals are surrounded by curly braces { }<br>
+    they contain --> key: value pairs <br>
+    the keys are like variable names they point to a location holding the value <br>
+    keys are also called ***Identifiers***
+} <br>
 
     let objectName = {
     'Property Name': 'Property Value',
-    propName: 'Prop Value'
+     propName: 'Prop Value'
+    };
+  
+Methods are data stored in an object as a function<br>
+***Properties*** are what an object HAS and a ***Methods*** are what an object DOES.<br>
+Methods in our object literals by creating ordinary, colon-separated key-value pairs. The key serves as our method’s name, while the value is an anonymous function expression.<br>
+
+###### Two ways to access an Object key's value:<br>
+1. Dot notation<br>
+   
+       const variableName = objectName.propertyName;
+2. Bracket notation<br>
+
+       let variableName = objectName['propertyName'];
+ 
+
+If we try to access a property that does not exist on that object, undefined will be returned.<br>
+
+    objectName.propertyName(which is not in object);// Returns undefined
+    spaceship.favoriteIcecream; // Returns undefined
+
+Example:<>br
+
+    let spaceship = {
+      'Fuel Type': 'Turbo Fuel',
+      'Active Duty': true,
+      homePlanet: 'Earth',
+      numCrew: 5
+      homePlanet: 'Earth',
+      color: 'silver'
     };
     
-Methods are data stored in an object as a function<br>
-Properties are what an object has and a method is what an object does.<br>
-Methods in our object literals by creating ordinary, colon-separated key-value pairs. The key serves as our method’s name, while the value is an anonymous function expression.<br>
+`spaceship['Active Duty'];   // Returns true`
+`spaceship['Fuel Type'];   // Returns  'Turbo Fuel'`
+`spaceship['numCrew'];   // Returns '5'`
+`spaceship.numCrew;   // Returns  '5'`
+`spaceship.homePlanet; // Returns 'Earth'`
+`spaceship.color; // Returns 'silver'`
+
 
