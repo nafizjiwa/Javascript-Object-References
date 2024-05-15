@@ -2,6 +2,14 @@
 ------
 Object Literal:
 
+let objectName = {
+    this object is assigned to a variable named: objectName
+    object literals are surrounded by curly braces
+    they contain
+    key: value pairs
+    the keys are like variable names
+}
+
     let objectName = {
     'Property Name': 'Property Value',
     propName: 'Prop Value'
