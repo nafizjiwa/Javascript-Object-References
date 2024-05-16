@@ -1,7 +1,8 @@
 
 # Object-References<br>
 ------
-OBJECTS are data structure used as containers and they store data and functionality. <br>
+OBJECTS are data structures used as containers and they store data and functionality. <br>
+ - The functionality is stored in methods on our objects: <br>
 There are three ways of creating an object in javascript.<br>
 >>1.Using Object literals <br>
 >>2.Using the new keyword. <br>
