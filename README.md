@@ -35,8 +35,8 @@ Each value is a valid JavaScript data type. <br>
           greet: function() {
                 console.log('Hello, my name is ' + this.name);
           }
-    }; <br>
-
+    }; 
+<br>
 ***Properties*** are what an object HAS and a ***Methods*** are what an object DOES.<br>
 ###### Two ways to access an Object key's value:<br>
 1. Dot notation<br>
