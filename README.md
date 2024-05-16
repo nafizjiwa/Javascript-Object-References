@@ -78,7 +78,18 @@ ES6 allows a new syntax for methods in object literals where we can ***omit*** t
                 console.log('INVOKE THIS METHOD LIKE SO: alienShip.invade(); .')
               }
     };
+### Objects are Passed by Reference
 
+Passed by reference means when the object assigned as a variable and passed to a function the parameter is a reference to the memory location of the object. The function will mutate the object not a copy of the object but a function can't reassign the variable assigned to the object.
+See Below how to mutate an object through functions.
+
+    let functionName = objectParam => {
+      objectParam['Property Name'] = 'New Property Value';        //This function changes/mutates this 'Property Name' to a 'New Property Value
+    };
+
+    let functionName = objectParam => {
+      objectParam.propertyName = 'A Property Value';            //This function will reassign or set the propertyName to the assigned value
+    };
 
 
 
