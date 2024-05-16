@@ -187,7 +187,7 @@ Since the values are being assigned outside of the scope of the menu object, the
 Instead, reference the object, followed by the setter like as below:<br>
     `object.setter = value;`<br>
 ###### Setter methods do not need parentheses.<br>
-   `menu.todaysSpecial;`
+   `menu.todaysSpecial;` <br>
 To see the values of _meal and _price we use console.log and use the underscore when referencing <br>
     `console.log(menu._meal);`<br>
     `console.log(menu._price);`<br>
