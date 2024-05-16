@@ -151,12 +151,7 @@ You can directly manipulate an object property using the following syntax:<br>
 Syntactically, To create a setter needs: 1.The set keyword, 2.A function declaration.<br>
 `set functionName() {` <br>
 <br>
-`}`<br>
- 
-    Since the values are being assigned outside of the scope of the menu object, the this keyword is not needed here.
-    Instead, reference the object, followed by the setter like below:
-    object.setter = value;
-    And remember, setter methods do not need parentheses.
+`}`
     
 <br>
 
@@ -185,8 +180,13 @@ Syntactically, To create a setter needs: 1.The set keyword, 2.A function declara
     };
 <br>
 
-`menu.meal = 'meat';`<br>
-`menu.price = 1;`<br>
+Set the values of _meal and _price using the setter methods. <br>
+    `menu.meal = 'meat';`<br>
+    `menu.price = 1;`<br>
+Since the values are being assigned outside of the scope of the menu object, the `.this` keyword is not needed.<br>
+Instead, reference the object, followed by the setter like as below:<br>
+    `object.setter = value;`<br>
+###### Setter methods do not need parentheses.<br>
 `menu.todaysSpecial;`<br>
 
 ABOVE:
