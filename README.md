@@ -55,8 +55,8 @@ Above object property favoriteIcecream is not in the spaceship object above henc
 
 ***Bracket Notation allows us to use variables inside brackets to select keys of an object***<br>
 
-    let returnAnyProp = (objectName, propName) =>                      
-                            objectName[propName];                   // propName is variable and the function looks for the variables value
+    let returnAnyProp = (objectName, propName) =>                                  // propName is variable and
+                            objectName[propName];                               // the function looks for the variables value
         console.log(returnAnyProp(spaceship, 'homePlanet'));                                 // Returns 'Earth'
 
 
