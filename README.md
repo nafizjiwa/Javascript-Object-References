@@ -194,6 +194,10 @@ To see the values of _meal and _price we use console.log and use the underscore 
 If we don't the result of console.log would be ***undefined***:<br>
     `console.log(menu.meal);`<br>
     `console.log(menu.price);`<br>
+### Examples of using typeof and expected outputs.<br>
+    console.log(typeof 42);                // Expected output: "number"
+    console.log(typeof 'blubber');         // Expected output: "string"
+    console.log(typeof true);              // Expected output: "boolean"
 
 ABOVE:
 The code block with the if statement not the else will run because number or string has a truthy value; <br>
