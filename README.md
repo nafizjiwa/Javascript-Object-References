@@ -1,7 +1,19 @@
+
 # Object-References<br>
 ------
-Object Literal: <br>
+OBJECTS are data structure used as containers and they store data and functionality. <br>
+There are three ways of creating an object in javascript.<br>
+>>1.Using Object literals <br>
+>>2.Using the new keyword. <br>
+>>3.By defining an object constructor and then creating an object constructor type. <br>
 
+<br>
+Object Literal: <br>
+Their form is key-value pairs. <br>
+Each key is a string and, <br>
+Each value is a valid JavaScript data type. <br>
+
+#### SYNTAX:
 >let objectName = { <br>
 >>this object is assigned to a variable named: objectName <br>
 >>object literals are surrounded by curly braces { }<br>
@@ -9,12 +21,22 @@ Object Literal: <br>
 >>the keys are like variable names they point to a location holding the value <br>
 >>keys are also called ***Identifiers***
 >>>>} <br>
-###### Example:
+###### Example:<br>
     let objectName = {
-    'Property Name': 'Property Value',
-     propName: 'Prop Value'
+        'Property Name': 'Property Value',
+         propName: 'Prop Value'
     };
-  
+<br>
+
+    const person = {
+          name: 'John Doe',
+          age: 30,
+          address: '123 Main Street',
+          greet: function() {
+                console.log('Hello, my name is ' + this.name);
+          }
+    }; <br>
+
 ***Properties*** are what an object HAS and a ***Methods*** are what an object DOES.<br>
 ###### Two ways to access an Object key's value:<br>
 1. Dot notation<br>
