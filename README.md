@@ -152,6 +152,11 @@ Syntactically, To create a setter needs: 1.The set keyword, 2.A function declara
 `set functionName() {` <br>
 <br>
 `}`<br>
+ 
+    Since the values are being assigned outside of the scope of the menu object, the this keyword is not needed here.
+    Instead, reference the object, followed by the setter like below:
+    object.setter = value;
+    And remember, setter methods do not need parentheses.
 
     const person = {
       _age: 37,
