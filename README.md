@@ -161,8 +161,8 @@ Syntactically, To create a setter needs: 1.The set keyword, 2.A function declara
 <br>
 
      const menu = { 
-        _meal: " ",                                                               // To access the value for _meal is --> menu._meal
-        _price: 0,                                                                // To access the value for _price is --> menu._price
+        _meal: " ",                                                        // To access the value for _meal is --> menu._meal
+        _price: 0,                                                         // To access the value for _price is --> menu._price
         set meal(mealToCheck){                                 
           if(typeof mealToCheck === 'string'){                                    // mealToCheck must be a String
             return this._meal = mealToCheck;
