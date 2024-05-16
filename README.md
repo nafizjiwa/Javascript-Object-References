@@ -84,11 +84,11 @@ Passed by reference means when the object assigned as a variable and passed to a
 See Below how to mutate an object through functions.
 
     let functionName = objectParam => {
-      objectParam['Property Name'] = 'New Property Value';        //This function changes/mutates this 'Property Name' to a 'New Property Value
+      objectParam['Property Name'] = 'New Property Value';      //This function mutates this 'Property Name' to a 'New Property Value
     };
 
     let functionName = objectParam => {
-      objectParam.propertyName = 'A Property Value';            //This function will reassign or set the propertyName to the assigned value
+      objectParam.propertyName = 'A Property Value';          //This function will reassign or set the propertyName to the assigned value
     };
 
 
