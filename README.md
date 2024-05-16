@@ -92,6 +92,20 @@ See Below how to mutate an object through functions.
     };                                                                     //the propertyName to the assigned value
 
 
+### Looping Through Objects
+We can iterate through objects using the For...in.
+for...in will execute a given block of code for EACH PROPERTY IN AN OBJECT.
+
+    for (let variableName in outerObject.innerObject) {
+      console.log(`${variableName}: ${outerObject.innerObject[variableName].propertyName}`)
+    };
+
+    for (let variableName in outerObject.innerObject) {
+      console.log(`${outerObject.innerObject[variableName].propertyName}: 
+          ${outerObject.innerObject[variableName].differentPropertyName}`)
+    };
+
+
 
 
 
