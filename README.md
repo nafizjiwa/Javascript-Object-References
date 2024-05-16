@@ -39,7 +39,9 @@ Object Literal: <br>
     }; 
 <br>
 ***Properties*** are what an object HAS and a ***Methods*** are what an object DOES.<br>
+<br>
 ###### Two ways to access an Object key's value:<br>
+<br>
 1. Dot notation<br>
    
        const variableName = objectName.propertyName;
