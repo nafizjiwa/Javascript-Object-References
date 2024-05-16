@@ -191,7 +191,7 @@ Syntactically, To create a setter needs: 1.The set keyword, 2.A function declara
 
 ABOVE:
 The code block with the if statement not the else will run because number or string has a truthy value; <br>
-even though the value is not explicitly the value true in a boolean or conditional context, it evaluates to true ***___ because it has been assigned a non-falsy value.___*** <br>
+even though the value is not explicitly the value true in a boolean or conditional context, it evaluates to true ***___because it has been assigned a non-falsy value.___*** <br>
 <br>
 
 #### So which values are falsy (or evaluate to false when checked as a condition)<br>
