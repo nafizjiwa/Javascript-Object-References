@@ -198,7 +198,7 @@ even though the value is not explicitly the value true in a boolean or condition
 
 > The list of falsy values includes:<br>
   >> 1. 0 <br>
-  >> 2. Empty strings like "" or '' <br>
+  >> 2. Empty strings like "" or ' ' <br>
   >> 3. null which represent when there is no value at all <br>
   >> 4. unefined which represent when a declared variable lacks a value <br>
   >> 5. NaN, or Not a Number <br>
