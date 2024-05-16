@@ -189,6 +189,19 @@ Syntactically, To create a setter needs: 1.The set keyword, 2.A function declara
 `menu.price = 1;`<br>
 `menu.todaysSpecial;`<br>
 
+ABOVE:
+The code block with the if statement not the else will run because number or string has a truthy value; <br>
+even though the value is not explicitly the value true in a boolean or conditional context, it evaluates to true<br>
+###### because it has been assigned a non-falsy value. <br>
+<br>
+#### So which values are falsy (or evaluate to false when checked as a condition)<br>
+>> The list of falsy values includes:<br>
+    1. 0
+    2. Empty strings like "" or ''
+    3. null which represent when there is no value at all
+    4. undefined which represent when a declared variable lacks a value
+    5. NaN, or Not a Number
+
 
 
 
