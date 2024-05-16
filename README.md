@@ -160,23 +160,23 @@ Syntactically, To create a setter needs: 1.The set keyword, 2.A function declara
     
 <br>
 
-     const menu = {
-        _meal: " ",
-        _price: 0,
-        set meal(mealToCheck){
-          if(typeof mealToCheck === 'string'){
+     const menu = { 
+        _meal: " ",                                                                       // To access the value for _meal is --> menu._meal
+        _price: 0,                                                                        // To access the value for _price is --> menu._price
+        set meal(mealToCheck){                                 
+          if(typeof mealToCheck === 'string'){                                            // mealToCheck must be a String
             return this._meal = mealToCheck;
           }
         },
         set price(priceToCheck){
-            if (typeof priceToCheck === 'number' && priceToCheck >= 0){
+            if (typeof priceToCheck === 'number' && priceToCheck >= 0){                   // priceToCheck must be a Number
               return this._price = priceToCheck;
             }else {
               return console.log("Enter a new price!");
             }
         },
-        get todaysSpecial(){
-          if(this._meal && this._price){
+        get todaysSpecial(){                                                           // To invoke `menu.todaysSpecial`
+          if(this._meal && this._price){                                              // The value for _meal and _price must be truthy; 'empty strings' & 0 = falsy values
             console.log(`Today's Special is ${this._meal} for ${this._price}`);
           } else {
             console.log(`Meal or price was not set correctly!`);
@@ -188,7 +188,7 @@ Syntactically, To create a setter needs: 1.The set keyword, 2.A function declara
 `menu.meal = 'meat';`<br>
 `menu.price = 1;`<br>
 `menu.todaysSpecial;`<br>
-`console.log(menu);`<br>
+
 
 
 
