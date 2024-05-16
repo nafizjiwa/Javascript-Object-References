@@ -9,6 +9,7 @@ There are three ways of creating an object in javascript.<br>
 
 <br>
 Object Literal: <br>
+ 
 `Their form is key-value pairs.` 
 `Each key is a string and,` 
 `Each value is a valid JavaScript data type.`
