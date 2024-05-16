@@ -38,6 +38,9 @@ Example:<>br
       numCrew: 5
       homePlanet: 'Earth',
       color: 'silver'
+      invade: function () { 
+            console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.')
+          }
     };
     
 `spaceship['Active Duty'];               // Returns true`<br>
@@ -65,9 +68,14 @@ Using methods in an object literals:  key-value pairs. The key serves as our met
     };
 ES6 allows a new syntax for methods in object literals where we can ***omit*** the ***__colon__*** and the ***__function keyword___***.
 
-    const alienShip = {
-          invade () { 
+    const variableName = {
+          methodsName () { 
                 console.log('This method has no colon or keyword function so recognize the syntax when in an object literal.')
+              }
+    };
+     const alienShip = {
+          invade () { 
+                console.log('INVOKE THIS METHOD LIKE SO: alienShip.invade(); .')
               }
     };
 
