@@ -160,16 +160,35 @@ Syntactically, To create a setter needs: 1.The set keyword, 2.A function declara
     
 <br>
 
-    const person = {
-      _age: 37,
-      set age(newAge){
-        if (typeof newAge === 'number'){
-          this._age = newAge;
-        } else {
-          console.log('You must assign a number to age');
+     const menu = {
+        _meal: " ",
+        _price: 0,
+        set meal(mealToCheck){
+          if(typeof mealToCheck === 'string'){
+            return this._meal = mealToCheck;
+          }
+        },
+        set price(priceToCheck){
+            if (typeof priceToCheck === 'number' && priceToCheck >= 0){
+              return this._price = priceToCheck;
+            }else {
+              return console.log("Enter a new price!");
+            }
+        },
+        get todaysSpecial(){
+          if(this._meal && this._price){
+            console.log(`Today's Special is ${this._meal} for ${this._price}`);
+          } else {
+            console.log(`Meal or price was not set correctly!`);
+          }
         }
-      }
     };
+<br>
+
+`menu.meal = 'meat';`<br>
+`menu.price = 1;`<br>
+`menu.todaysSpecial;`<br>
+`console.log(menu);`<br>
 
 
 
