@@ -5,9 +5,9 @@ OBJECTS are data structures used as containers and they store data and functiona
  - The functionality is stored in methods on our objects. <br>
 
 There are three ways of creating an object in javascript.<br>
- - 1.Using Object literals <br>
- - 2.Using the new keyword. <br>
- - 3.By defining an object constructor and then creating an object constructor type. <br>
+ - 1. Using Object literals <br>
+ - 2. Using the new keyword. <br>
+ - 3. By defining an object constructor and then creating an object constructor type. <br>
 
 <br>
 Object Literal: <br>
