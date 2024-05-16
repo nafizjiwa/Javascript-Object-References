@@ -136,6 +136,14 @@ for...in will execute a given block of code for EACH PROPERTY IN AN OBJECT.<br>
 
 
 
+The calling object is the object that a method belongs to
+The `.this` keyword refers to the calling object. We use to access properties of the calling object.
+Setters and getter methods allow for accessing and assigning properties.
+Object destructuring: one way is the property value shorthand and another is destructured assignment.
+The syntax of using destructured assignment will look like:
+const { propertyName } = obj;
+Invoking the destructed property
+propertyName.methodName();
 
 
 
