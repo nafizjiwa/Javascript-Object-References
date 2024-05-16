@@ -157,6 +157,8 @@ Syntactically, To create a setter needs: 1.The set keyword, 2.A function declara
     Instead, reference the object, followed by the setter like below:
     object.setter = value;
     And remember, setter methods do not need parentheses.
+    
+<br>
 
     const person = {
       _age: 37,
