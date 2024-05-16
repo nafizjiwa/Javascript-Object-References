@@ -159,11 +159,11 @@ Syntactically, To create a setter needs: 1.The set keyword, 2.A function declara
         _meal: " ",                                                       // To access the value for _meal is --> menu._meal
         _price: 0,                                                        // To access the value for _price is --> menu._price
         set meal(mealToCheck){                                 
-          if(typeof mealToCheck === 'string'){                                   // mealToCheck must be a String
+          if(typeof mealToCheck === 'string'){              // typeof returns the operand's value     // mealToCheck must be a String
             return this._meal = mealToCheck;
           }
         },
-        set price(priceToCheck){
+        set price(priceToCheck){                                                 // typeof returns the operand's value
             if (typeof priceToCheck === 'number' && priceToCheck >= 0){          // priceToCheck must be a Number
               return this._price = priceToCheck;
             }else {
