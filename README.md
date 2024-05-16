@@ -195,8 +195,9 @@ even though the value is not explicitly the value true in a boolean or condition
 ###### because it has been assigned a non-falsy value. <br>
 <br>
 #### So which values are falsy (or evaluate to false when checked as a condition)<br>
+
 >> The list of falsy values includes:<br>
-    1. 0
+    1. 0<br>
     2. Empty strings like "" or ''
     3. null which represent when there is no value at all
     4. undefined which represent when a declared variable lacks a value
