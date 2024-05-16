@@ -86,20 +86,22 @@ See Below how to mutate an object through functions.
     let functionName = objectParam => {
       objectParam['Property Name'] = 'New Property Value';                  //This function mutates this 
     };                                                                        //'Property Name' to a 'New Property Value
+<br>
 
     let functionName = objectParam => {
       objectParam.propertyName = 'A Property Value';                      //This function will reassign or set 
     };                                                                     //the propertyName to the assigned value
 
 
-### Looping Through Objects
-We can iterate through objects using the For...in.
-for...in will execute a given block of code for EACH PROPERTY IN AN OBJECT.
+### Looping Through Objects<br>
+We can iterate through objects using the For...in.<br>
+for...in will execute a given block of code for EACH PROPERTY IN AN OBJECT.<br>
 
     for (let variableName in outerObject.innerObject) {
       console.log(`${variableName}: ${outerObject.innerObject[variableName].propertyName}`)
     };
-
+<br>
+    
     for (let variableName in outerObject.innerObject) {
       console.log(`${outerObject.innerObject[variableName].propertyName}: 
           ${outerObject.innerObject[variableName].differentPropertyName}`)
