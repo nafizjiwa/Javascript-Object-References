@@ -136,14 +136,34 @@ for...in will execute a given block of code for EACH PROPERTY IN AN OBJECT.<br>
 
 
 
-The calling object is the object that a method belongs to
-The `.this` keyword refers to the calling object. We use to access properties of the calling object.
-Setters and getter methods allow for accessing and assigning properties.
-Object destructuring: one way is the property value shorthand and another is destructured assignment.
-The syntax of using destructured assignment will look like:
-const { propertyName } = obj;
-Invoking the destructed property
-propertyName.methodName();
+The calling object is the object that a method belongs to<br>
+The `.this` keyword refers to the calling object. We use to access properties of the calling object.<br>
+Setters and getter methods allow for accessing and assigning properties.<br>
+Object destructuring: one way is the property value shorthand and another is destructured assignment.<br>
+The syntax of using destructured assignment will look like:<br>
+`const { propertyName } = obj;` <br>
+Invoking the destructed property<br>
+`propertyName.methodName();` <br>
+In JavaScript, it’s a common convention to place an underscore _ before the name of a property that should not be altered.<br>
+`_property: value` <br>
+You can directly manipulate an object property using the following syntax:<br>
+`object.property = value;` <br>
+Syntactically, To create a setter needs: 1.The set keyword, 2.A function declaration.<br>
+`set functionName() {` <br>
+<br>
+`}`<br>
+
+    const person = {
+      _age: 37,
+      set age(newAge){
+        if (typeof newAge === 'number'){
+          this._age = newAge;
+        } else {
+          console.log('You must assign a number to age');
+        }
+      }
+    };
+
 
 
 
