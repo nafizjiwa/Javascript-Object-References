@@ -15,10 +15,7 @@ Object Literal: <br>
      propName: 'Prop Value'
     };
   
-Methods are data stored in an object as a function<br>
 ***Properties*** are what an object HAS and a ***Methods*** are what an object DOES.<br>
-Methods in our object literals by creating ordinary, colon-separated key-value pairs. The key serves as our method’s name, while the value is an anonymous function expression.<br>
-
 ###### Two ways to access an Object key's value:<br>
 1. Dot notation<br>
    
@@ -57,6 +54,30 @@ Above object property favoriteIcecream is not in the spaceship object above henc
     let returnAnyProp = (objectName, propName) =>                                  // propName is a variable and
                             objectName[propName];                               // the function looks for the variables value
         console.log(returnAnyProp(spaceship, 'homePlanet'));                                 // Returns 'Earth'
+
+Methods are data stored in an object as a function<br>
+Using methods in an object literals:  key-value pairs. The key serves as our method’s name, while the value is an anonymous function expression.<br>
+
+    const variableName = {
+          methodsName: valueIsFunction () { 
+                console.log('This is a method which can be involked or called.')
+              }
+    };
+ES6 allows a new syntax for methods in object literals where we can ***omit*** the ***__colon__*** and the ***__function keyword___***.
+
+    const alienShip = {
+          invade () { 
+                console.log('This method has no colon or keyword function so recognize the syntax when in an object literal.')
+              }
+    };
+
+
+
+
+
+
+
+
 
 
 
