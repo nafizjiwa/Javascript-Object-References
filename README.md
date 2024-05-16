@@ -191,7 +191,7 @@ Instead, reference the object, followed by the setter like as below:<br>
 To see the values of _meal and _price we use console.log and use the underscore when referencing <br>
     `console.log(menu._meal);`<br>
     `console.log(menu._price);`<br>
-If we don't the result of console.log would be ***undefined***:
+If we don't the result of console.log would be ***undefined***:<br>
     `console.log(menu.meal);`<br>
     `console.log(menu.price);`<br>
 
