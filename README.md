@@ -2,7 +2,7 @@
 # Object-References<br>
 ------
 OBJECTS are data structures used as containers and they store data and functionality. <br>
- - The functionality is stored in methods on our objects. <br>
+ - The functionality is stored in methods on the object. <br>
 
 There are three ways of creating an object in javascript.<br>
   1. Using Object literals <br>
@@ -12,7 +12,7 @@ There are three ways of creating an object in javascript.<br>
 <br>
 Object Literal: <br>
  
-`Their form is key-value pairs.` <br>
+`Their form is key-value pairs also referred to as properties..` <br>
 `Each key is a string and,` <br>
 `Each value is a valid JavaScript data type.` <br>
  <br>
@@ -218,24 +218,69 @@ Make sure to call .addGame() outside the team object definition.
 
 Remember that you can use the .games() getter method to console.log() the _games property like below:
 
-console.log(team.games); 
+console.log(team.games); <br>
 
-JavaScript destructuring assignment shorthand syntax
+JavaScript destructuring assignment shorthand syntax <br>
 
-const rubiksCubeFacts = {
-  possiblePermutations: '43,252,003,274,489,856,000',
-  invented: '1974',
-  largestCube: '17x17x17'
-};
-const {possiblePermutations, invented, largestCube} = rubiksCubeFacts;
-console.log(possiblePermutations); // '43,252,003,274,489,856,000'
-console.log(invented); // '1974'
-console.log(largestCube); // '17x17x17'
-The JavaScript destructuring assignment is a shorthand syntax that allows object properties to be extracted into specific variable values.
+    const rubiksCubeFacts = {
+      possiblePermutations: '43,252,003,274,489,856,000', 
+      invented: '1974', 
+      largestCube: '17x17x17'
+    }; 
+const {possiblePermutations, invented, largestCube} = rubiksCubeFacts; <br>
+console.log(possiblePermutations); // '43,252,003,274,489,856,000' <br>
+console.log(invented); // '1974' <br>
+console.log(largestCube); // '17x17x17' <br>
+The JavaScript destructuring assignment is a shorthand syntax that allows object properties to be extracted into specific variable values. <br>
 
-It uses a pair of curly braces ({}) with property names on the left-hand side of an assignment to extract values from objects. The number of variables can be less than the total properties of an object.
+It uses a pair of curly braces ({}) with property names on the left-hand side of an assignment to extract values from objects. <br> 
+The number of variables can be less than the total properties of an object.<br>
+
+javascript function this<br>
+
+    const restaurant = {
+      numCustomers: 45,
+      seatCapacity: 100,
+      availableSeats() {
+        // this refers to the restaurant object
+        // and it's used to access its properties
+        return this.seatCapacity - this.numCustomers;
+      }
+    }
 
 
+Every JavaScript function or method has a `this` context. For a function defined inside of an object, <br> 
+this will refer to that object itself. For a function defined outside of an object, this will refer to the global object (window in a browser, global in Node.js).
+
+
+# this Keyword <br>
+
+    const cat = {
+      name: 'Pipey',
+      age: 8,
+      whatName() {
+        return this.name              //this. keyword inside the object function refers to the cat { object } which allows access its name property
+      }
+    };
+
+console.log(cat.whatName());    // Output: Pipey
+
+Keyword `this` refers to a method’s calling object, and used to access properties belonging to that object.
+
+## Javascript factory functions
+
+    // A factory function that accepts 'name', 'age', and 'breed' parameters // RETURNS a customized dog object.
+    
+    const dogFactory = (name, age, breed) => {
+      return {
+        name: name,
+        age: age,
+        breed: breed,
+        bark() {
+          console.log('Woof!');  
+        }
+      };
+    };
 
 
 
