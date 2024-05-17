@@ -45,11 +45,11 @@ Object Literal: <br>
 ###### Example of a JavaScript object that does NOT contain any valid key name.
 
     const song = {
-      (song title): 'Distant',                                      //make valid '(song title)'  or song or title or songTitle
-      writer#: 'Arya',                                              //make valid 'writer#' or writer
-      release year: 2010,                                           //make valid 'release year' or release or year or releaseYear
-      song#title: 'Done'
-      10.1: 'rating';
+      (song title): 'Distant',                               //make valid '(song title)'  or song or title or songTitle
+      writer#: 'Arya',                                       //make valid 'writer#' or writer
+      release year: 2010,                                    //make valid 'release year' or release or year or releaseYear
+      song#title: 'Done'                                     //make valid 'song#title'
+      10.1: 'rating';                                        //make valid '10.1'
     }
 
 ###### Two ways to access an Object key's value:<br>
@@ -112,8 +112,8 @@ ES6 allows a new syntax for methods in object literals where we can ***omit*** t
     };
      const alienShip = {
           invade () { 
-                console.log('INVOKE THIS METHOD LIKE SO: alienShip.invade(); .')
-              }
+                console.log('INVOKE THIS METHOD LIKE SO: alienShip.invade(); .')          
+              }                            //objectName.methodName(arguments).
     };
 ### Objects are Passed by Reference
 
@@ -166,9 +166,9 @@ Syntactically, To create a setter needs: 1.The set keyword, 2.A function declara
 <br>
 
      const menu = { 
-        _meal: " ",                                                       // To access the value for _meal directly (not through method) is --> menu._meal
-        _price: 0,                                                        // To access the value for _price is --> menu._price
-        set meal(mealToCheck){                                            // To invoke setter menu.meal NOT mean._meal
+        _meal: " ",                                               // To access the value for _meal directly (not through method) is --> menu._meal
+        _price: 0,                                                // To access the value for _price is --> menu._price
+        set meal(mealToCheck){                                    // To invoke setter menu.meal(mealToCheck) NOT mean._meal
           if(typeof mealToCheck === 'string'){              // typeof returns the operand's value     // mealToCheck must be a String
             return this._meal = mealToCheck;
           }
