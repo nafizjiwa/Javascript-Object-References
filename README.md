@@ -1,5 +1,5 @@
 
-# Object-References<br>
+# JAVASCRIPT OBJECT References<br>
 ------
 OBJECTS are data structures used as containers and they store data and functionality. <br>
  - The functionality is stored in methods on the object. <br>
