@@ -49,7 +49,7 @@ Object Literal: <br>
       writer#: 'Arya',                                       //make valid 'writer#' or writer
       release year: 2010,                                    //make valid 'release year' or release or year or releaseYear
       song#title: 'Done'                                     //make valid 'song#title'
-      10.1: 'rating';                                        //make valid '10.1'
+      10.1: 'rating';                                        //make valid '10.1' or 10
     }
 
 ###### Two ways to access an Object key's value:<br>
