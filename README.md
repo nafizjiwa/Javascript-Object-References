@@ -13,7 +13,7 @@ There are three ways of creating an object in javascript.<br>
 Object Literal: <br>
  
 `Their form is key-value pairs also referred to as properties..` <br>
-`Each key is a string and,` <br>
+`Each key is a STRING and if there are special characters they must contain quotes 'key',` <br>
 `Each value is a valid JavaScript data type.` <br>
  <br>
 #### SYNTAX:
@@ -40,8 +40,18 @@ Object Literal: <br>
           }
     }; 
 <br>
-***Properties*** are what an object HAS and a ***Methods*** are what an object DOES.<br>
+ 👏 ***Properties*** are what an object HAS and a ***Methods*** are what an object DOES.<br>
 <br>
+###### Example of a JavaScript object that does NOT contain any valid key name.
+
+    const song = {
+      (song title): 'Distant',                                      //make valid '(song title)'  or song or title or songTitle
+      writer#: 'Arya',                                              //make valid 'writer#' or writer
+      release year: 2010,                                           //make valid 'release year' or release or year or releaseYear
+      song#title: 'Done'
+      10.1: 'rating';
+    }
+
 ###### Two ways to access an Object key's value:<br>
 <br>
 1. Dot notation<br>
