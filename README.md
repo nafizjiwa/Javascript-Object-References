@@ -214,6 +214,28 @@ even though the value is not explicitly the value true in a boolean or condition
   >> 5. NaN, or Not a Number <br>
 
 
+Make sure to call .addGame() outside the team object definition.
+
+Remember that you can use the .games() getter method to console.log() the _games property like below:
+
+console.log(team.games); 
+
+JavaScript destructuring assignment shorthand syntax
+
+const rubiksCubeFacts = {
+  possiblePermutations: '43,252,003,274,489,856,000',
+  invented: '1974',
+  largestCube: '17x17x17'
+};
+const {possiblePermutations, invented, largestCube} = rubiksCubeFacts;
+console.log(possiblePermutations); // '43,252,003,274,489,856,000'
+console.log(invented); // '1974'
+console.log(largestCube); // '17x17x17'
+The JavaScript destructuring assignment is a shorthand syntax that allows object properties to be extracted into specific variable values.
+
+It uses a pair of curly braces ({}) with property names on the left-hand side of an assignment to extract values from objects. The number of variables can be less than the total properties of an object.
+
+
 
 
 
