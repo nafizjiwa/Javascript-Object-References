@@ -301,6 +301,11 @@ Keyword `this` refers to a method’s calling object, and used to access propert
 
 The shorthand property name syntax in JavaScript allows creating objects without explicitly specifying the property names (ie. explicitly declaring the value after the key). In this process, an object is created where the property names of that object match variables which already exist in that context. Shorthand property names populate an object with a key matching the identifier and a value matching the identifier’s value.
 
+You can access a property from an object by appending it with a period and the property’s getter name. See below:
+
+    // Print a value                  console.log(myObject.propertyGetterName);
+    // Call a method                  myObject.myMethod();
+
 
 
 
